@@ -64,9 +64,7 @@ An automobile company aims to enter the US market and compete with local and Eur
 * Explain how the dashboard was designed to communicate complex data insights to different audiences. 
 
 ## Unfixed Bugs
-* Please mention unfixed bugs and why they were not fixed. This section should include shortcomings of the frameworks or technologies used. Although time can be a significant variable to consider, paucity of time and difficulty understanding implementation are not valid reasons to leave bugs unfixed.
-* Did you recognise gaps in your knowledge, and how did you address them?
-* If applicable, include evidence of feedback received (from peers or instructors) and how it improved your approach or understanding.
+* Full path directories were used when reading the csv file containing our unprocessed dataset, this means without the user manually changing this path when trying to use the notebook they won't be able to load the dataset into a dataframe
 
 ## Development Roadmap
 * What challenges did you face, and what strategies were used to overcome these challenges?
