@@ -37,7 +37,24 @@ An automobile company aims to enter the US market and compete with local and Eur
 * Actionable Insights: The final deliverable will not just be a set of visualizations but a comprehensive strategy. The presentation will guide Geely on what features to prioritize and what market segments offer the most promising opportunities for a new competitor.
 
 ## Hypothesis and how to validate?
-* List here your project hypothesis(es) and how you envision validating it (them) 
+
+Project Hypotheses
+1. Car price is strongly influenced by engine size, horsepower, and brand.
+Validation: Use correlation analysis and regression plots to measure the relationship between price and these features. High correlation coefficients and clear trends in visualisations will support this hypothesis.
+
+2. Composite scores for family/city, offroad, and sportscar categories effectively segment cars by suitability.
+Validation: Compare top-scoring cars in each category with their actual specifications and market positioning. Use visualisations to check if the scores align with expected car types.
+
+3. Luxury cars (top 25% by price) exhibit distinct feature patterns compared to non-luxury cars.
+Validation: Use box plots and summary statistics to compare features (e.g., power_to_weight, car_volume) between luxury and non-luxury segments.
+
+4. Fuel efficiency (mpg_ratio) and power-to-weight ratio are key differentiators for buyers with practical vs. performance needs.
+Validation: Segment cars by these features and analyze their distribution and impact on price and category scores.
+
+Validation Approach
+Perform statistical analysis (correlation, regression, summary statistics) using the processed dataset.
+Use data visualisations (pairplots, box plots, heatmaps, score charts) to visually confirm relationships and segmentation.
+Cross-check results with domain knowledge and market expectations to ensure findings are meaningful and actionable.
 
 ## 🗺️ Project Plan
 
@@ -168,9 +185,24 @@ car-price-analysis-hackathon-team4/
  
 
 ## The rationale to map the business requirements to the Data Visualisations
-* List your business requirements and a rationale to map them to the Data Visualisations
 
-* In order to map the business requirements to meaningful data visualizations, the dataset includes both raw and processed features. Some features, such as power_to_weight, car_volume, and the various *_score metrics, were created during the ETL phase to provide more actionable insights. These features, along with the original data, serve as the input for the visualization phase, enabling analysis of market segmentation, performance, fuel efficiency, and suitability for different driving needs.
+Business Requirements
+
+- Understand key factors influencing car prices - identify which car attributes (e.g., engine size, horsepower, brand, body type) most strongly affect market price.
+- Segment cars by category and suitability - classify cars into family/city, offroad, and sportscar categories to support targeted recommendations.
+- Detect market diversity and outliers - recognize rare or luxury vehicles and price variability to reflect genuine market diversity.
+- Assess fuel efficiency and performance - compare cars based on fuel economy and power-to-weight ratios for practical and performance-oriented buyers.
+- Support decision-making for buyers and sellers - provide clear, actionable insights for different user groups (e.g., families, enthusiasts, dealers).
+
+Rationale for Data Visualisations
+
+In order to map the business requirements to meaningful data visualizations, the dataset includes both raw and processed features. Some features, such as power_to_weight, car_volume, and the various *_score metrics, were created during the ETL phase to provide more actionable insights. These features, along with the original data, serve as the input for the visualization phase, enabling analysis of market segmentation, performance, fuel efficiency, and suitability for different driving needs.
+
+- Pairplots and correlation heatmaps reveal relationships between price and key numeric features, directly addressing the need to understand price drivers.
+- Box plots by car body and drivewheel visualize market segmentation and price variability, supporting category-based analysis and outlier detection.
+- Composite score visualisations (city, outdoor, sport) map cars to their suitability for different use cases, enabling targeted recommendations.
+- Fuel efficiency and performance charts help users compare cars on practical and technical criteria, meeting requirements for efficiency and performance assessment.
+- Metadata tables and summary statistics provide transparency and context, ensuring that insights are actionable and relevant for business decisions.
 
 Car Dataset Features:
 
