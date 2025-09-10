@@ -113,7 +113,7 @@ Polish deliverables for readability and accessibility, and package the work for 
 
 ```
 car-price-analysis-hackathon-team4/
-├─ Dashboard/                     # PBIX + exported screenshots/GIFs when ready
+├─ Dashboard/                     # PBIX + exported screenshots
 ├─ Data/
 │  ├─ raw/                        # Kaggle CSV + data dictionary
 │  └─ clean/
@@ -128,7 +128,7 @@ car-price-analysis-hackathon-team4/
 ├─ .slugignore
 ├─ Procfile
 ├─ README.md
-├─ requirements.txt               # include `scipy` (zscore) + core libs
+├─ requirements.txt               
 └─ setup.sh
 ```
 
@@ -377,8 +377,7 @@ This project leverages a combination of Python libraries and BI tools for data e
   [Car Price Prediction (Multiple Linear Regression)](https://www.kaggle.com/datasets/hellbuoy/car-price-prediction) — sourced from Kaggle.  
   This dataset was used to explore factors influencing car prices and build regression models.
 
-- **Tutorials & Code References**  
-  - YouTube tutorials for form validation and UI enhancements  
+- **References**    
   - GitHub repositories consulted for best practices in modular project setup and Git workflows
 
 - **Generative AI Tools**  
