@@ -248,41 +248,48 @@ Example:
 * What new skills or tools do you plan to learn next based on your project experience? 
 
 ## Deployment
-### Heroku
 
-* The App live link is: https://YOUR_APP_NAME.herokuapp.com/ 
-* Set the runtime.txt Python version to a [Heroku-20](https://devcenter.heroku.com/articles/python-support#supported-runtimes) stack currently supported version.
-* The project was deployed to Heroku using the following steps.
-
-1. Log in to Heroku and create an App
-2. From the Deploy tab, select GitHub as the deployment method.
-3. Select your repository name and click Search. Once it is found, click Connect.
-4. Select the branch you want to deploy, then click Deploy Branch.
-5. The deployment process should happen smoothly if all deployment files are fully functional. Click now the button Open App on the top of the page to access your App.
-6. If the slug size is too large then add large files not required for the app to the .slugignore file.
+NEEDS TO BE COMPLETED TEAM
 
 
 ## Main Data Analysis Libraries
-* Here you should list the libraries you used in the project and provide an example(s) of how you used these libraries.
+
+This project leverages a combination of Python libraries and BI tools for data exploration, visualization, and modeling:
+
+- **Pandas** — for data manipulation and cleaning  
+- **NumPy** — for numerical operations and array handling  
+- **Matplotlib** — for basic plotting and static visualizations  
+- **Seaborn** — for statistical graphics and enhanced plots  
+- **Plotly** — for interactive and dynamic visualizations  
+- **Power BI** — for dashboarding and business intelligence reporting
 
 
 ## Credits 
 
-* In this section, you need to reference where you got your content, media and extra help from. It is common practice to use code from other repositories and tutorials, however, it is important to be very specific about these sources to avoid plagiarism. 
-* You can break the credits section up into Content and Media, depending on what you have included in your project. 
+### Content
 
-### Content 
+- **Dataset**  
+  [Car Price Prediction (Multiple Linear Regression)](https://www.kaggle.com/datasets/hellbuoy/car-price-prediction) — sourced from Kaggle.  
+  This dataset was used to explore factors influencing car prices and build regression models.
 
-- The text for the Home page was taken from Wikipedia Article A
-- Instructions on how to implement form validation on the Sign-Up page was taken from [Specific YouTube Tutorial](https://www.youtube.com/)
-- The icons in the footer were taken from [Font Awesome](https://fontawesome.com/)
+- **Tutorials & Code References**  
+  - YouTube tutorials for form validation and UI enhancements  
+  - GitHub repositories consulted for best practices in modular project setup and Git workflows
+
+- **Generative AI Tools**  
+  - ChatGPT (Microsoft Copilot) — for ideation, documentation scaffolding, and troubleshooting support  
+  - GitHub Copilot — for code suggestions and inline development assistance
+
+- **Team Collaboration**  
+  - Contributions from team members in planning, coding, and documentation phases
+
+---
 
 ### Media
 
-- The photos used on the home and sign-up page are from This Open-Source site
-- The images used for the gallery page were taken from this other open-source site
+- Screenshots of the Git Kanban Board and other visual assets are stored in the `Media/` directory
 
+---
 
-
-## Acknowledgements (optional)
-* Thank the people who provided support through this project.
+## Acknowledgements
+* Thanks to the team for collaboration across GitHub Projects, Google Drive, and Discord — and to mentors/coaches for feedback throughout the hackathon.
