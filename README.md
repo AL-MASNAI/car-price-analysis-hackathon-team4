@@ -47,11 +47,48 @@ An automobile company aims to enter the US market and compete with local and Eur
 ## The rationale to map the business requirements to the Data Visualisations
 * List your business requirements and a rationale to map them to the Data Visualisations
 
-## Analysis techniques used
-* List the data analysis methods used and explain limitations or alternative approaches.
-* How did you structure the data analysis techniques. Justify your response.
-* Did the data limit you, and did you use an alternative approach to meet these challenges?
-* How did you use generative AI tools to help with ideation, design thinking and code optimisation?
+* In order to map the business requirements to meaningful data visualizations, the dataset includes both raw and processed features. Some features, such as power_to_weight, car_volume, and the various *_score metrics, were created during the ETL phase to provide more actionable insights. These features, along with the original data, serve as the input for the visualization phase, enabling analysis of market segmentation, performance, fuel efficiency, and suitability for different driving needs.
+
+Car Dataset Features:
+
+| Column                     | Description                              | Significance                          |
+|----------------------------|------------------------------------------|---------------------------------------|
+| `car_ID`                   | Unique car identifier                    | Distinguishes records                 |
+| `brand`                    | Car manufacturer                         | Trend & market analysis               |
+| `model`                    | Specific car model                       | Comparison between models             |
+| `symbolling`               | Insurance risk rating                    | Indicates safety risk                 |
+| `fueltype`                 | Fuel type (gas/diesel)                   | Impacts cost, emissions, performance  |
+| `aspiration`               | Engine aspiration (standard/turbo)       | Affects engine power & efficiency     |
+| `doornumber`               | Number of doors                          | Family/city suitability               |
+| `carbody`                  | Car body style                           | Market segmentation & price           |
+| `drivewheel`               | Drivetrain type                          | Handling & offroad capability         |
+| `enginelocation`           | Engine placement                         | Affects balance & design              |
+| `wheelbase`                | Distance between axles (inches)          | Stability & interior space            |
+| `carlength`                | Car length (inches)                      | Interior space & parking              |
+| `carwidth`                 | Car width (inches)                       | Maneuverability & comfort             |
+| `carheight`                | Car height (inches)                      | Headroom & ground clearance           |
+| `curbweight`               | Car weight (lbs)                         | Fuel efficiency & handling            |
+| `enginetype`               | Engine type/configuration                | Technical analysis                    |
+| `cylinernumber`            | Number of cylinders                      | Engine power & smoothness             |
+| `enginesize`               | Engine size (cubic inches)               | Predictor of power & price            |
+| `fuelsystem`               | Fuel delivery system                     | Efficiency & performance              |
+| `boreratio`                | Bore-Stroke ratio                        | Engine design metric                  |
+| `stroke`                   | Piston stroke length                     | Engine design metric                  |
+| `compressionratio`         | Compression ratio                        | Efficiency & power                    |
+| `horsepower`               | Engine power output                      | Performance & price                   |
+| `peakrpm`                  | Max engine RPM                           | Performance characteristics           |
+| `citympg`                  | City fuel efficiency                     | Cost & environmental analysis         |
+| `Price`                    | Market price ($)                         | Target variable                       |
+| `power_to_weight`          | Horsepower / curbweight                  | Real-world performance                |
+| `car_volume`               | Estimated car volume                     | Interior space & comfort              |
+| `mpg_ratio`                | City MPG / highway MPG                   | Compare fuel efficiency               |
+| `is_luxury`                | Luxury car flag                          | Market segmentation                   |
+| `city_score`               | Family/city suitability                  | Composite score                       |
+| `outdoor_score`            | Offroad suitability                      | Composite score                       |
+| `sport_score`              | Sportscar suitability                    | Composite score                       |
+| `city_score_normalized`    | Normalized city score (0-1)              | Comparison across cars                |
+| `outdoor_score_normalized` | Normalized outdoor score (0-1)           | Comparison across cars                |
+| `sport_score_normalized`   | Normalized sport score (0-1)             | Comparison across cars                |
 
 ## Ethical considerations
 * Were there any data privacy, bias or fairness issues with the data?
