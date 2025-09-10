@@ -57,6 +57,23 @@ An automobile company aims to enter the US market and compete with local and Eur
 * Were there any data privacy, bias or fairness issues with the data?
 * How did you overcome any legal or societal issues?
 
+## Accessibility for Color Blind Users
+All visualizations in this project have been tested for accessibility using COBLIS (Color Blindness Simulator). The accompanying image demonstrates how the charts appear under a wide range of color vision conditions, including:
+• 	Red-Weak (Protanomaly)
+• 	Green-Weak (Deuteranomaly)
+• 	Blue-Weak (Tritanomaly)
+• 	Red-Blind (Protanopia)
+• 	Green-Blind (Deuteranopia)
+• 	Blue-Blind (Tritanopia)
+• 	Monochromacy (Achromatopsia)
+• 	Blue Cone Monochromacy
+Each chart was evaluated across these conditions to ensure that key visual distinctions—such as data clusters, trends, and histogram distributions—remain perceptible and interpretable regardless of color vision type.
+Based on the analysis of the simulation grid, no further adjustments were necessary. The charts maintain sufficient contrast, shape differentiation, and layout clarity, making them accessible to users with all forms of color vision deficiency. This ensures that the visual integrity of the data is preserved without relying solely on color cues.
+By proactively testing and validating our visualizations, we aim to support inclusive design and make data insights available to a broader audience.
+
+Example:
+![COBLIS Test Result](media/coblis_test.png "Color Blindness Simulation")
+
 ## Dashboard Design
 * List all dashboard pages and their content, either blocks of information or widgets, like buttons, checkboxes, images, or any other item that your dashboard library supports.
 * Later, during the project development, you may revisit your dashboard plan to update a given feature (for example, at the beginning of the project you were confident you would use a given plot to display an insight but subsequently you used another plot type).
