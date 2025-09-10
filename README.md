@@ -311,12 +311,50 @@ Example:
 * Full path directories were used when reading the csv file containing our unprocessed dataset, this means without the user manually changing this path when trying to use the notebook they won't be able to load the dataset into a dataframe
 
 ## Development Roadmap
-* What challenges did you face, and what strategies were used to overcome these challenges?
-* What new skills or tools do you plan to learn next based on your project experience? 
+
+Throughout the project, we adopted an agile workflow, holding frequent team meetings to ensure clear communication, avoid misunderstandings, and keep everyone aligned on objectives and deliverables. This collaborative approach helped us quickly address challenges and adapt to changing requirements.
+
+### Challenges and Strategies
+- We encountered several technical challenges, including data cleaning complexities, feature engineering decisions, and integration of multiple analysis tools.
+- Managing the project on GitHub presented issues such as merge conflicts and branching problems. With the support of our tutors, as well as through our own initiative, we learned to resolve these conflicts efficiently. This hands-on experience greatly improved our understanding of collaborative version control and project management.
+- Regular meetings and open communication channels allowed us to identify and address blockers early, ensuring steady progress and a shared understanding of project goals.
+
+### Skills and Tools for Future Development
+- Based on our experience, we plan to further develop our skills in advanced data visualization (e.g., Power BI, interactive dashboards), machine learning techniques, and cloud-based deployment solutions.
+- We aim to deepen our expertise in collaborative tools like GitHub, as well as project management methodologies to support larger, more complex analytics projects in the future.
+- Continuous learning and teamwork will remain central to our approach, building on the strong foundation established during this project.
 
 ## Deployment
 
-NEEDS TO BE COMPLETED TEAM
+This project is designed to be run locally in a Jupyter Notebook environment. To deploy and use the analysis:
+
+Clone the repository
+
+Download or clone the project files to your local machine.
+Set up the environment
+
+Install required Python packages using pip install -r requirements.txt.
+Ensure you have Jupyter Notebook or JupyterLab installed.
+Prepare the data
+
+Place the raw dataset files in the raw directory as described in the Inputs section.
+Run the notebooks
+
+Open and execute the ETL.ipynb notebook to process and clean the data.
+Then, run the Visualisation.ipynb notebook to generate visualisations and insights.
+View the Power BI file
+
+Open the provided .pbix Power BI file using Microsoft Power BI Desktop.
+You can download Power BI Desktop for free from the official Microsoft website.
+Use the Power BI file to explore interactive dashboards and visualisations based on the processed dataset.
+Outputs
+
+The processed dataset will be saved in cars_processed.csv.
+Visual outputs and metadata tables are generated within the notebooks.
+Notes
+No web or cloud deployment is required; all analysis is performed locally.
+For sharing results, export notebook outputs, processed data, or Power BI dashboards as needed.
+If you wish to deploy as a web app or dashboard, consider using frameworks like Streamlit or Dash (not included in this project).
 
 
 ## Main Data Analysis Libraries
