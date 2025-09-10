@@ -232,7 +232,7 @@ Based on the analysis of the simulation grid, no further adjustments were necess
 By proactively testing and validating our visualizations, we aim to support inclusive design and make data insights available to a broader audience.
 
 Example:
-![COBLIS Test Result](media/coblis_test.png "Color Blindness Simulation")
+![COBLIS Test Result](https://github.com/AL-MASNAI/car-price-analysis-hackathon-team4/raw/main/Media/Coblis_test.png "Color Blindness Simulation")
 
 ## Dashboard Design
 * List all dashboard pages and their content, either blocks of information or widgets, like buttons, checkboxes, images, or any other item that your dashboard library supports.
