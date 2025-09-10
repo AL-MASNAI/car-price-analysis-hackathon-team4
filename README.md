@@ -39,10 +39,133 @@ An automobile company aims to enter the US market and compete with local and Eur
 ## Hypothesis and how to validate?
 * List here your project hypothesis(es) and how you envision validating it (them) 
 
-## Project Plan
-* Outline the high-level steps taken for the analysis.
-* How was the data managed throughout the collection, processing, analysis and interpretation steps?
-* Why did you choose the research methodologies you used?
+## 🗺️ Project Plan
+
+The project is delivered over four structured milestones, each designed to scaffold a reproducible analytics workflow and map directly to the repo structure.
+
+### 🔹 Milestone 1 — Project Setup · Kick‑off (Day 0)
+**Objective**  
+Establish a working, collaborative delivery environment so the team can start shipping immediately and predictably.
+
+**Key Actions**
+- Create GitHub repository and **Projects (Kanban) board** with status columns, labels, and issue/PR templates.
+- Define folder structure: `Data/raw`, `Data/clean`, `jupyter_notebooks`, **`Media/`**, `Dashboard/`.
+- Stage the Kaggle dataset into `Data/raw/` (`cars.csv`, `Data Dictionary - carprices.xlsx`).
+- Seed ETL/EDA backlog and link issues/PRs to milestones; assign owners/reviewers.
+
+**Success Criteria**  
+Any teammate can clone, install deps, and run the first notebook without friction. The board provides real‑time visibility into planned, active, and completed work.
+
+---
+
+### 🔹 Milestone 2 — Initial ETL Build & First Visuals (Day 1)
+**Objective**  
+Turn the raw dataset into a clean, analysis‑ready table and verify the pipeline end‑to‑end.
+
+**Key Actions**
+- Implement **notebook‑driven ETL** (`jupyter_notebooks/ETL.ipynb`): parsing brand/model, standardizing categorical labels, converting units/types, engineering features, and exporting `Data/clean/cars_processed.csv` (**index=False**).
+- Handle missing values safely (e.g., Subaru model → `dl`), keep outliers by design, and document assumptions.
+- Produce first EDA visuals in `jupyter_notebooks/Visualisation.ipynb` and **save artifacts to `Media/`**.
+
+---
+
+### 🔹 Milestone 3 — ETL Refinement, Dashboards & Testing (Day 2)
+**Objective**  
+Harden and extend the pipeline to support decision‑grade insights and prep the first dashboard build.
+
+**Key Actions**
+- Add and validate **comparability scores** (City/Family, Outdoor/Off‑Road, Sport): per‑feature normalization (invert where higher is worse), sum, and re‑normalize to 0–1.
+- **Quantify drivers of price**: compute absolute correlations and visualize strongest relationships (heatmap + scatter); export to `Media/`.
+- Make paths robust (prefer `pathlib`), ensure **idempotent**/deterministic writes.
+- Draft **Power BI** page layout (overview + persona pages) and field naming conventions aligned with ETL (e.g., *Engine Size (L)*).
+
+---
+
+### 🔹 Milestone 4 — Final Refinements, Presentation, Documentation & Publish (Day 3)
+**Objective**  
+Polish deliverables for readability and accessibility, and package the work for sharing and demo.
+
+**Key Actions**
+- Freeze `Data/clean/cars_processed.csv` and commit all `Media/` visuals (PNGs/HTML).
+- Populate the presentation deck with an EDA narrative and figure references.
+- (Optional) Publish a GitHub **Release** bundling CSV, figures, and PBIX when ready.
+
+---
+
+## 📁 Repository Structure (scaffold)
+
+```
+car-price-analysis-hackathon-team4/
+├─ Dashboard/                     # PBIX + exported screenshots/GIFs when ready
+├─ Data/
+│  ├─ raw/                        # Kaggle CSV + data dictionary
+│  └─ clean/
+│     └─ cars_processed.csv       # ETL output (written by ETL.ipynb)
+├─ jupyter_notebooks/
+│  ├─ ETL.ipynb                   # cleaning, feature engineering, scoring, export
+│  ├─ Visualisation.ipynb         # EDA (dists, correlations, outliers, scores)
+│  └─ Notebook_Template copy.ipynb
+├─ Media/                         # EDA figures/HTML + deck assets (images, GIFs)
+├─ .gitignore
+├─ .python-version
+├─ .slugignore
+├─ Procfile
+├─ README.md
+├─ requirements.txt               # include `scipy` (zscore) + core libs
+└─ setup.sh
+```
+
+---
+
+## 1️⃣ High‑Level Steps Taken for the Analysis
+
+| Phase | Description |
+|------:|-------------|
+| **Setup** | Repo creation, Kanban board setup, folder scaffolding, dataset staging |
+| **ETL Build** | Raw‑to‑clean transformation, notebook‑driven pipeline, first visuals |
+| **EDA & Scores** | Distributions, correlations, **comparability scores**, outlier rationale |
+| **Finalization** | Presentation narrative, documentation, (optional) GitHub Release |
+
+---
+
+## 2️⃣ Data Management Across All Phases
+
+- **Collection** — Kaggle dataset staged in `Data/raw/`, tracked via GitHub issues.  
+- **Processing** — ETL notebooks version‑controlled; outputs stored in `Data/clean/`.  
+- **Analysis** — EDA steps logged in notebooks; visuals exported to **`Media/`**.  
+- **Interpretation** — Insights narrated in the presentation; dashboard framework prepared.  
+- **Collaboration** — Issues/PRs tied to milestones; reviewers ensure reproducibility and clarity.
+
+---
+
+## 3️⃣ Justification of Research Methodologies
+
+| Methodology | Rationale |
+|-------------|-----------|
+| **Notebook‑Driven ETL** | Transparent, auditable, easy onboarding |
+| **Power BI (planned)** | Stakeholder‑friendly, interactive exploration |
+| **Milestone‑Based Delivery** | Agile iteration, clear accountability |
+| **GitHub Project Management** | Labels, issues, reviewers → traceability |
+
+---
+
+## 👥 Collaboration & Teamwork
+
+- **GitHub Projects** — Kanban board, labels, milestones, and linked issues/PRs.  
+- **Google Drive** — Shared workspace for presentation and shared docs.  
+- **Discord** — Daily check‑ins, async updates, links to issues and previews.
+
+---
+
+## 📦 Final Deliverables (current state)
+
+- ✅ Cleaned dataset: `Data/clean/cars_processed.csv`  
+- ✅ EDA artifacts saved in **`Media/`** (distributions, correlations, outliers, score‑vs‑price)  
+- ✅ Jupyter notebooks: `jupyter_notebooks/ETL.ipynb`, `jupyter_notebooks/Visualisation.ipynb`  
+- 🧭 Power BI dashboard: **framework defined**, PBIX to be built in `Dashboard/`
+
+---
+ 
 
 ## The rationale to map the business requirements to the Data Visualisations
 * List your business requirements and a rationale to map them to the Data Visualisations
