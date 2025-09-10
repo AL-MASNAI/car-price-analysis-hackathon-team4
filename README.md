@@ -213,9 +213,44 @@ Car Dataset Features:
 | `outdoor_score_normalized` | Normalized outdoor score (0-1)           | Comparison across cars                |
 | `sport_score_normalized`   | Normalized sport score (0-1)             | Comparison across cars                |
 
-## Ethical considerations
-* Were there any data privacy, bias or fairness issues with the data?
-* How did you overcome any legal or societal issues?
+
+
+## Ethical Considerations
+
+As data analysts, it's essential to address the ethical implications of this project—especially when sharing it publicly on platforms like GitHub and Kaggle. Our commitment to best practices ensures responsible and transparent data science.
+
+---
+
+### 1. Data and Privacy
+
+* We use a public dataset from Kaggle, which contains **no personally identifiable information (PII)**.  
+The dataset focuses solely on vehicle attributes, not individual owners.  
+This approach respects user privacy and aligns with best practices for data anonymity.
+
+---
+
+### 2. Bias and Fairness
+
+* The model’s accuracy depends on the **quality and representativeness** of the training data.  
+We acknowledge the risk of algorithmic bias, especially if the dataset over-represents certain car types or regions.  
+To mitigate this:
+
+- We analyzed feature correlations
+- We documented potential biases in the analysis process  
+- We aim to maintain fairness and transparency in predictions
+
+---
+
+### 3. Transparency and Accountability
+
+* This project is **open-source**, with clearly documented:
+
+- Data sources  
+- Modeling assumptions  
+- Known limitations
+
+---
+
 
 ## Accessibility for Color Blind Users
 All visualizations in this project have been tested for accessibility using COBLIS (Color Blindness Simulator). The accompanying image demonstrates how the charts appear under a wide range of color vision conditions, including:
